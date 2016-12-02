@@ -45,6 +45,7 @@ class HashTableTest(unittest.TestCase):
 
     def test_set_twice_and_get(self):
         ht = HashTable()
+        print 'THIS HASH'
         ht.set('I', 1)
         ht.set('V', 4)
         ht.set('X', 9)
@@ -54,6 +55,7 @@ class HashTableTest(unittest.TestCase):
         assert ht.get('I') == 1
         assert ht.get('V') == 5
         assert ht.get('X') == 10
+        print 'DONE'
         assert ht.length() == 3  # Check length is not overcounting
 
     def test_delete(self):
